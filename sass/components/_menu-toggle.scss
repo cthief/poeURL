@@ -1,0 +1,33 @@
+.MenuToggle {
+	position: relative;
+	display: inline-block;
+	top: 1em;
+	left: 1em;
+	z-index: 999;
+	cursor: pointer;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	width: 1.75em;
+}
+
+.MenuToggle-button { 
+	background-color: transparent;
+	background-image: none;
+	border: 0;
+	width: 1.75em;
+	padding: 0;
+}
+
+.MenuToggle-button:active {
+	outline: 0;
+	border: 0;
+}
+
+.MenuToggle-bar {
+	display: block;
+	width: 1.75em;
+	height: 4px;
+	margin-bottom: 4px;
+	background-color: #fff;
+	border-radius: 1px;
+}

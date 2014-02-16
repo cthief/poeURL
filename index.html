@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Path of Exile URL Shortener</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body class="BodyImage">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div id="menu" class="Menu u-sizeFit">
+        <div class="Menu-content">
+            <section>
+                <h2>Safe Url List</h2>
+                <p>The URL generator will only accept links beginning with:</p>
+                <ul>
+                    <li><a href="http://pathofexile.com/">www.pathofexile.com/</a></li>
+                    <li><a href="http://reddit.com/r/pathofexile/">www.reddit.com/r/pathofexile/</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="http://pathofexile.com/">www.pathofexile.com/</a></li>
+                    <li><a href="http://reddit.com/r/pathofexile/">www.reddit.com/r/pathofexile/</a></li>
+                </ul>
+                <p>Request more links <a href="http://www.pathofexile.com/forum/view-thread/795685">here</a></p>
+            </section>
+            <section>
+                <h2>What's a URL shrinker?</h2>
+                <p>A URL shrinker takes a url and matches it to a much shorter url, which redirects to the original one. This allows easy retyping of urls in Path of Exile chat.</p>
+                <p>Report any bugs to matt.pck@gmail.com or message me on forum null03; Stay Safe :)</p>
+            </section>
+            </div>
+        </div>
+        <div id="content" class="Content u-sizeFill">
+            <div class="MenuToggle">
+                <button id="menu-toggle" class="MenuToggle-button" type="button" data-target="#menu" data-target-class="visuallyhidden">
+                    <span class="MenuToggle-bar"></span>
+                    <span class="MenuToggle-bar"></span>
+                    <span class="MenuToggle-bar"></span>
+                </button>
+            </div>
+            <div class="CenterBox">
+                <div class="CenterBox-content">
+                    <div class="URLBox">
+                        <h3 class="URLBox-title">URL must start with http:// and any of the safe URLs.</h3>
+                        <form class="URLForm Form Form--inline">
+                            <input type="button" value="URL" class="u-size1of8 URLForm-tag" disabled
+                            ><input type="text" class="u-size6of8" placeholder="http://"
+                            ><input type="submit" value="Shrink" class="u-size1of8 URLForm-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $.backstretch("img/bg.jpg", {fade: 200});
+        </script>
+        <script>
+        var menuToggle = $('#menu-toggle'), 
+            menu = $('#menu'),
+            menuActive = true,
+            hidden = 'visuallyhidden';
+            $(window).resize(function() {
+                var width = $(window).width();
+                if (width <= 900) {
+                    if (!menuToggle.hasClass(hidden)) {
+                        menuToggle.addClass(hidden);
+                        if (!menu.hasClass(hidden)) {
+                            menuActive = true;
+                        }
+                        menu.addClass(hidden);
+                    }
+                } else {
+                    menuToggle.removeClass(hidden);
+                    if (menuActive) {
+                        menu.removeClass(hidden);
+                    }
+                }
+            });
+            menuToggle.click(function() {
+                var targetClass = $(this).data('target-class'), 
+                    target = $(this).data('target');
+                $(target).toggleClass(targetClass);
+                menuActive = !menuActive;
+            });
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+.URLForm {
+
+}
+
+.URLForm-tag {
+	color: #000 !important;
+	background: #f2956a;
+}
+
+.URLForm-submit { 
+	background: #919cd8;
+}
+
+.URLForm-submit:hover {
+	background: #c2cbfc;
+}
+
+.URLForm-submit:active {
+	background: #7483bc;
+}
+
+.URLForm > input {
+	color: #000 !important;
+	padding: 0.5em;
+	border: 0;
+}
+
+.URLForm > input[type="text"] {
+	-webkit-box-shadow: inset 0px 2px 5px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    inset 0px 2px 5px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         inset 0px 2px 5px 0px rgba(50, 50, 50, 0.35);
+}
+
+.URLForm > input[type="text"]:hover, .URLForm > input[type="text"]:active {
+	-webkit-box-shadow: inset 0px 2px 5px 0px rgba(50, 50, 50, 0.20);
+	-moz-box-shadow:    inset 0px 2px 5px 0px rgba(50, 50, 50, 0.20);
+	box-shadow:         inset 0px 2px 5px 0px rgba(50, 50, 50, 0.20);
+}
+
+.URLForm > input:first-child {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.URLForm > input:last-child {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.URLForm > input:focus {
+	outline: 0;
+	border: 0;
+}

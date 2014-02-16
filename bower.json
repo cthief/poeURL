@@ -1,0 +1,30 @@
+{
+  "name": "poeurl",
+  "version": "0.1.0",
+  "homepage": "http://www.poeurl.com",
+  "description": "PoE URL shortener",
+  "keywords": [
+    "Path",
+    "of",
+    "Exile"
+  ],
+  "authors": [
+    "Eric McDaniel <eric.g.mcdaniel@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "suit": "~0.3.0",
+    "suit-form": "*",
+    "suit-flex-embed": "~1.5.0",
+    "jquery-backstretch": "~2.0.4",
+    "suit-utils-size": "~0.5.0"
+  }
+}

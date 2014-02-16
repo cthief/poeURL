@@ -1,0 +1,43 @@
+.Menu {
+	color: #e6e6e6;
+	height: 100%;
+	max-width: 300px;
+	background: rgba(255,255,255,0.1);
+	transition: all ease-out 0.3s;
+	-webkit-box-shadow: inset -5px 0px 1px 0px rgba(0, 0, 0, 0.38);
+	-moz-box-shadow:    inset -5px 0px 1px 0px rgba(0, 0, 0, 0.38);
+	box-shadow:         inset -5px 0px 1px 0px rgba(0, 0, 0, 0.38);
+}
+
+.Menu.is-shrunk {
+	width: 1px !important;
+}
+
+.Menu-content {
+	padding: 1.25em;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.Menu-content > section {
+	margin-bottom: 1em;
+}
+
+.Menu-content > section > h2 {
+	color: #fff;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0.5em;
+}
+
+.Menu-content > section > p {
+	margin-bottom: 0.25em;
+}
+
+.Menu-content > section > ul {
+	margin: 0.5em 0;
+} 
+
+.Menu-content > ul > li {
+	padding-bottom: 0.25em;
+}
